@@ -1,0 +1,17 @@
+.search{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: #0689f588;
+  flex-direction: row;
+}
+
+.name{
+  display: flex;
+  align-self: center;
+  justify-self: flex-start;
+  color: white;
+  text-decoration: none;
+}

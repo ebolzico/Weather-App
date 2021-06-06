@@ -1,0 +1,14 @@
+.cards{
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: transparent;
+  align-items: center;
+}
+
+.cards > h2 {
+  color: white;
+}
+

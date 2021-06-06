@@ -1,0 +1,28 @@
+.form{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    right: 20px;
+}
+
+.input{
+    margin: 2px;
+    justify-self: flex-end;
+    border-radius: 1vh;
+    outline: none;
+}
+.button{
+    background-color: lightblue;
+    border-radius: 1vh;
+    width: 10vh;
+    height: 3vh;
+    transition: ease 0.3s;
+}
+
+.button:hover {
+    color: white;
+    background-color: lightgreen;
+}
+

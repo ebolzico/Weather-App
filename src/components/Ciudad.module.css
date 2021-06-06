@@ -1,0 +1,55 @@
+.ciudad{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 90%;
+    border: 3px solid white; 
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    margin: 2vh;
+    background-color: #0689f536;
+}
+.close {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    align-content: center;
+    justify-content: flex-end;
+}
+.close > a {
+    margin: 1vh;
+}
+.close > a > button {
+    border-radius: 50%;
+    background-color: lightsalmon;
+    transition: ease 0.3s;
+}
+.close > a > button:hover {
+    background-color: red;
+    color: white;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.info > h1 {
+    font-size: 5vh;
+}
+.info > div > h3 {
+    color: rgb(79, 146, 187);
+}

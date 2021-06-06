@@ -1,0 +1,82 @@
+.link:hover {
+  text-decoration: none;
+}
+
+
+.whole{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  width: 30vh;
+  height: 15vh;
+  border: 3px solid black; 
+  background-color: rgba(211, 211, 211, 0.267);
+  border-radius: 10px;
+  margin: 10px;
+  transition: ease 0.3s;
+}
+
+.whole:hover {
+  background-color: #0689f53f;
+}
+
+.content{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.button{
+  font-size: 10px;
+  width: 3vh;
+  border-radius: 25px;
+  border-style: hidden;
+  background-color:black;  
+  justify-content: center; 
+  color: white;
+  outline: none;
+  transition: ease 0.3s;
+}
+
+.button:hover{
+  transition: 100ms ease-out; 
+  background-color: red;
+}
+
+.ciudad{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1vh;
+  font-size: 3vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans';
+  top: 2px;
+  color: black;
+}
+
+.temp{
+
+  flex-direction: row;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.min{
+  font-size: 20px;
+  color: rgb(24, 143, 255);
+  margin: 2px;
+}
+
+.max{
+  font-size: 20px;
+  color: rgb(255, 65, 65);
+  margin: 1px;
+}
+
+.img{
+  height: 5vh;
+  width: 5vh;
+  padding: 0px;
+}
