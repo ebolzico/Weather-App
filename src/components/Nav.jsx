@@ -14,7 +14,7 @@ function Nav({onSearch}) { //onSearch= significa que le das un atributo con el v
   }
 
   return (
-    <div className= {style.search}>
+    <div className= {style.nav}>
       <h2 className={style.name}>Weather App</h2>
       <SearchBar onSearch={onSearch}/>  
       <div className={style.aboutMe}>
