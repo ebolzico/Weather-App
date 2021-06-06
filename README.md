@@ -2,4 +2,4 @@
 
 ### Made with React, an app that lets you have your dashboard with the cities you want. You can also look into it's more detailed information by clicking it.
 
-#### Deployed link: https://weather-app2-five.vercel.app/
+#### Deployed link: https://weather-app2-five.vercel.app/ 
