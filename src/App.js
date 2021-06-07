@@ -6,6 +6,8 @@ import {Route} from 'react-router-dom';
 import About from './components/About.jsx';
 import Ciudad from './components/Ciudad.jsx';
 import swal from 'sweetalert' 
+import dotenv from 'dotenv'
+dotenv.config()
 
 
 export default function App() {
