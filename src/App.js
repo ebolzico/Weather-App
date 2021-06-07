@@ -12,7 +12,7 @@ dotenv.config()
 
 export default function App() {
   const [cities, setCities] = useState([]);
-  
+   
   function onSearch(ciudad) {
     let check= cities.filter(i => i.name === ciudad)
     if (check[0]){
