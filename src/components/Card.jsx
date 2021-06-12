@@ -8,7 +8,7 @@ export default function Card ({min, max, name, img, onClose, id}) {
         <div className={style.whole}>
           <div className={style.ciudad}>
             {name}
-          <button className={style.button} onClick= {onClose}>X</button>
+          <button className={style.button} onClick= {(id) => onClose}>X</button>
           </div>
           <div className={style.content}>
             <div className={style.temp}>
