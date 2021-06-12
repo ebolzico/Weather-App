@@ -14,12 +14,7 @@ export default function App() {
   const [cities, setCities] = useState([]);
    
   function onSearch(ciudad) {
-    let check= cities.filter(i => i.name === ciudad)
-    if (check[0]){
-      return swal({
-        title: 'Error!',
-        text: 'The city you searched is already listed'
-    })}
+    
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=11eb6a052535065313b3c194887996d0&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
@@ -37,7 +32,12 @@ export default function App() {
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon
           };
-          setCities(oldCities => [...oldCities, ciudad]);
+          let check= cities.filter(i => i.name === recurso.name)
+          if (check[0]){
+            return swal({
+              title: 'Error!',
+              text: 'The city you searched is already listed'
+          })} else {setCities(oldCities => [...oldCities, ciudad])}
         } else {
           swal({
             title: 'Error!',
