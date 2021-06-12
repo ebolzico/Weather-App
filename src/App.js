@@ -6,8 +6,8 @@ import {Route} from 'react-router-dom';
 import About from './components/About.jsx';
 import Ciudad from './components/Ciudad.jsx';
 import swal from 'sweetalert' 
-import dotenv from 'dotenv'
-dotenv.config()
+/* import dotenv from 'dotenv'
+dotenv.config() */
 
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
         title: 'Error!',
         text: 'The city you searched is already listed'
     })}
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${process.env.REACT_APP_API_KEY}&units=metric`, {method: 'get', mode:'no-cors'})
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=11eb6a052535065313b3c194887996d0&units=metric`, {method: 'get', mode:'no-cors'})
       .then(r => r.json())
       .then((recurso) => {
         if(recurso.main !== undefined){
