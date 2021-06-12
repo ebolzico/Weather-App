@@ -20,7 +20,7 @@ export default function App() {
         title: 'Error!',
         text: 'The city you searched is already listed'
     })}
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=11eb6a052535065313b3c194887996d0&units=metric`, {method: 'get', mode:'no-cors'})
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=11eb6a052535065313b3c194887996d0&units=metric`, {method: 'get', mode:'no-cors'})
       .then(r => r.json())
       .then((recurso) => {
         if(recurso.main !== undefined){
